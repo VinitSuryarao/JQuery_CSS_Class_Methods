@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+   <style>
+      .Style1 { background-color: yellow;}
+      .Style2 { background-color: orange;}
+   </style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {
+            // Add Class
+            $('#btnAddClass').click(function(){
+               $('#bdy').addClass("Style1");
+            });
+
+            // Remove Class
+            $('#btnRemoveClass').click(function(){
+               $('#bdy').removeClass();
+            });
+
+            // Toggle Class
+            $('#btnToggleClass').click(function(){
+               $('#bdy').toggleClass("Style2");
+            });      
+			
+			// Css Class
+			$('#bdy').css('background-color','Yellow');
+               $('#bdy').css('color','Red');
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <div>
+      <input type="submit" id="btnAddClass" value="Add Class" >
+      <input type="submit" id="btnRemoveClass" value="Remove Class" >
+      <input type="submit" id="btnToggleClass" value="Toggle Class" >
+   </div>
+</body>
+</html>
